@@ -11,6 +11,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 vim.opt.cursorline = true
+vim.opt.cmdheight = 0
 
 vim.opt.wildmode = 'longest:full,full' -- complete the longest common match, and allow tabbing the results to fully complete them
 
