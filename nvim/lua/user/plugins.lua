@@ -109,9 +109,9 @@ use({
   end,
 })
 
-
 -- Split arrays and methods onto multiple lines, or join them back up.
--- keybind gS
+-- split keybind gS
+-- join keybind gJ
 use({
   'AndrewRadev/splitjoin.vim',
   config = function()
