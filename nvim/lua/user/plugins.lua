@@ -26,6 +26,14 @@ local use = require('packer').use
 -- Packer can manage itself.
 use('wbthomason/packer.nvim')
 
+-- VSCode theme
+use({
+  'tomasiser/vim-code-dark',
+  config = function()
+    vim.cmd('colorscheme codedark')
+  end,
+})
+
 -- Commenting support.
 use('tpope/vim-commentary')
 
