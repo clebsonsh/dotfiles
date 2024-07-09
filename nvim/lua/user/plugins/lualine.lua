@@ -10,7 +10,7 @@ require('lualine').setup {
     },
     ignore_focus = {},
     always_divide_middle = true,
-    globalstatus = false,
+    globalstatus = true,
     refresh = {
       statusline = 1000,
       tabline = 1000,
@@ -21,8 +21,8 @@ require('lualine').setup {
     lualine_a = {'branch'},
     lualine_b = {'diff', 'diagnostics'},
     lualine_c = {},
-    lualine_x = {'location'},
-    lualine_y = {},
+    lualine_x = {'filename'},
+    lualine_y = {'location'},
     lualine_z = {'mode'},
   },
   inactive_sections = {
