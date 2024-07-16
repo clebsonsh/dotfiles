@@ -1,7 +1,7 @@
 return {
     "lewis6991/gitsigns.nvim",
-    config = function()
-    require("gitsigns").setup({ current_line_blame = true })
+    opts = { current_line_blame = true },
+    init = function()
         vim.keymap.set("n", "]h", ":Gitsigns next_hunk<CR>")
         vim.keymap.set("n", "[h", ":Gitsigns prev_hunk<CR>")
         vim.keymap.set("n", "gs", ":Gitsigns stage_hunk<CR>")
