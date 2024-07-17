@@ -1,50 +1,58 @@
 return {
-    {
-        "williamboman/mason.nvim",
-        config = true
-    },
-    {
-        "williamboman/mason-lspconfig.nvim",
-        opts = {
-            ensure_installed = {
-                "lua_ls", -- Lua
-                "intelephense", -- PHP
-                "volar", -- VueJS
-                "tailwindcss", -- Tailwind CSS
-            }
-        }
-    },
-    {
-        "neovim/nvim-lspconfig",
-        init = function()
-            local lsp = require("lspconfig")
+	{
+		"williamboman/mason.nvim",
+		config = true,
+	},
+	{
+		"williamboman/mason-lspconfig.nvim",
+		opts = {
+			ensure_installed = {
+				"lua_ls", -- Lua
+				"intelephense", -- PHP
+				"volar", -- VueJS
+				"tailwindcss", -- Tailwind CSS
+			},
+		},
+	},
+	{
+		"neovim/nvim-lspconfig",
+		init = function()
+			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-            -- Lua
-            lsp.lua_ls.setup({})
+			local lsp = require("lspconfig")
 
-            -- PHP
-            lsp.intelephense.setup({})
+			-- Lua
+			lsp.lua_ls.setup({
+				capabilities = capabilities,
+			})
 
-            -- VueJS
-            lsp.volar.setup({
-                filetypes = {
-                    'typescript',
-                    'javascript',
-                    'javascriptreact',
-                    'typescriptreact',
-                    'vue',
-                }
-            })
+			-- PHP
+			lsp.intelephense.setup({
+				capabilities = capabilities,
+			})
 
-            -- Tailwind CSS
-            lsp.tailwindcss.setup({})
+			-- VueJS
+			lsp.volar.setup({
+				capabilities = capabilities,
+				filetypes = {
+					"javascript",
+					"javascriptreact",
+					"typescript",
+					"typescriptreact",
+					"vue",
+				},
+			})
 
-            -- keymaps
-            vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-            vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
-            vim.keymap.set({"n", "v"}, "<Leader>ca", vim.lsp.buf.code_action, {})
-            vim.keymap.set("n", "<Leader>rn", vim.lsp.buf.rename, {})
-        end
-    },
+			-- Tailwind CSS
+			lsp.tailwindcss.setup({
+				capabilities = capabilities,
+			})
+
+			-- keymaps
+			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
+			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
+			vim.keymap.set({ "n", "v" }, "<Leader>ca", vim.lsp.buf.code_action, {})
+			vim.keymap.set("n", "<F2>", vim.lsp.buf.rename, {})
+		end,
+	},
 }
-
