@@ -16,6 +16,9 @@ vim.keymap.set("v", "y", "myy`y")
 -- Disable annoying command line typo.
 vim.keymap.set("n", "q:", ":q")
 
+-- Close current buffer
+vim.keymap.set("n", "<Leader>q", ":q<CR>")
+
 -- Save me!!
 vim.keymap.set("i", "jj", "<Esc>:w<CR>")
 vim.keymap.set("i", "<C-s>", "<Esc>:w<CR>")
