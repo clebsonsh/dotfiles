@@ -41,6 +41,12 @@ return {
 					"typescriptreact",
 					"vue",
 				},
+				init_options = {
+					typescript = {
+						tsdk =
+						"/home/clebson/.local/share/nvim/mason/packages/typescript-language-server/node_modules/typescript/lib",
+					},
+				},
 			})
 
 			-- Tailwind CSS
