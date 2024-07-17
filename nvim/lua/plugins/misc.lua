@@ -1,18 +1,18 @@
 return {
 	-- Commenting support.
-	{ "tpope/vim-commentary" },
+	"tpope/vim-commentary",
 
 	-- Add, change, and delete surrounding text.
-	{ "tpope/vim-surround" },
+	"tpope/vim-surround",
 
 	-- Indent autodetection with editorconfig support.
-	{ "tpope/vim-sleuth" },
+	"tpope/vim-sleuth",
 
 	-- Allow plugins to enable repeating of commands.
-	{ "tpope/vim-repeat" },
+	"tpope/vim-repeat",
 
 	-- Jump to the last location when opening a file.
-	{ "farmergreg/vim-lastplace" },
+	"farmergreg/vim-lastplace",
 
 	-- Add smooth scrolling to avoid jarring jumps
 	{
@@ -31,7 +31,7 @@ return {
 	{
 		"famiu/bufdelete.nvim",
 		init = function()
-			vim.keymap.set("n", "<Leader>q", ":Bdelete<CR>")
+			vim.keymap.set("n", "<C-w>", ":Bdelete<CR>")
 		end,
 	},
 
@@ -60,6 +60,14 @@ return {
 		"lukas-reineke/indent-blankline.nvim",
 		init = function()
 			require("ibl").setup()
+		end,
+	},
+
+	-- Zen mode
+	{
+		"folke/zen-mode.nvim",
+		init = function()
+			vim.keymap.set("n", "<Leader>z", ":ZenMode<CR>")
 		end,
 	},
 }
