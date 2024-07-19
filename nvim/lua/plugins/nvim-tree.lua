@@ -6,6 +6,7 @@ return {
 	opts = {
 		view = {
 			side = "right",
+			width = 40,
 		},
 		git = {
 			ignore = false,
