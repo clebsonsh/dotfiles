@@ -32,6 +32,7 @@ return {
 		"famiu/bufdelete.nvim",
 		init = function()
 			vim.keymap.set("n", "<C-w>", ":Bdelete<CR>")
+			vim.keymap.set("n", "<Leader>q", ":Bdelete<CR>")
 		end,
 	},
 
