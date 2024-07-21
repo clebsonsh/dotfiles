@@ -7,5 +7,7 @@ return {
 		vim.keymap.set("n", "<Leader>l", ":TestLast<CR>")
 		vim.keymap.set("n", "<Leader>g", ":TestVisit<CR>")
 		vim.cmd("let test#php#phpunit#executable = './vendor/bin/pest'")
+		vim.cmd("let test#strategy = 'floaterm'")
+
 	end,
 }
