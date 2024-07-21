@@ -42,3 +42,8 @@ vim.keymap.set("n", "<A-j>", ":move .+1<CR>==")
 vim.keymap.set("n", "<A-k>", ":move .-2<CR>==")
 vim.keymap.set("v", "<A-j>", ":move '>+1<CR>gv=gv")
 vim.keymap.set("v", "<A-k>", ":move '<-2<CR>gv=gv")
+
+vim.keymap.set("n", "<C-j>", "<C-w><C-j>")
+vim.keymap.set("n", "<C-k>", "<C-w><C-k>")
+vim.keymap.set("n", "<C-l>", "<C-w><C-l>")
+vim.keymap.set("n", "<C-h>", "<C-w><C-h>")
