@@ -20,6 +20,7 @@ return {
 		priority = 1000,
 		opts = {
 			flavour = "mocha",
+			transparent_background = true,
 			term_colors = true,
 			default_integrations = true,
 			integrations = {
