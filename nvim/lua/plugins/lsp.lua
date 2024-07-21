@@ -4,7 +4,7 @@ return {
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 		opts = {
 			ensure_installed = {
-				"stylua",-- Lua
+				"stylua", -- Lua
 				"prettier", --JavaScript
 				"pint", -- PHP
 				"phpstan", -- PHP
@@ -51,8 +51,9 @@ return {
 				},
 				init_options = {
 					typescript = {
-						tsdk =
-						"/home/clebson/.local/share/nvim/mason/packages/typescript-language-server/node_modules/typescript/lib",
+						tsdk = vim.fn.expand(
+							"~/.local/share/nvim/mason/packages/typescript-language-server/node_modules/typescript/lib"
+						),
 					},
 				},
 			})
