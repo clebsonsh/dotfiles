@@ -1,7 +1,15 @@
 return {
+	{ "williamboman/mason.nvim", opts = {} },
 	{
-		"williamboman/mason.nvim",
-		config = true,
+		"WhoIsSethDaniel/mason-tool-installer.nvim",
+		opts = {
+			ensure_installed = {
+				"stylua",-- Lua
+				"prettier", --JavaScript
+				"pint", -- PHP
+				"phpstan", -- PHP
+			},
+		},
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",

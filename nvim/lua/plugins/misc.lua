@@ -15,23 +15,19 @@ return {
 	"farmergreg/vim-lastplace",
 
 	-- Add smooth scrolling to avoid jarring jumps
-	{
-		"karb94/neoscroll.nvim",
-		config = true,
-	},
+	{ "karb94/neoscroll.nvim", opts = {}},
 
 	-- Automatically add closing brackets, quotes, etc.
 	{
 		"windwp/nvim-autopairs",
 		event = "InsertEnter",
-		config = true,
+		opts = {},
 	},
 
 	-- All closing buffers without closing the split window.
 	{
 		"famiu/bufdelete.nvim",
 		init = function()
-			vim.keymap.set("n", "<C-w>", ":Bdelete<CR>")
 			vim.keymap.set("n", "<Leader>q", ":Bdelete<CR>")
 		end,
 	},
