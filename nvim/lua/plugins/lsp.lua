@@ -5,7 +5,6 @@ return {
 		opts = {
 			ensure_installed = {
 				"stylua", -- Lua
-				"prettier", --JavaScript
 				"pint", -- PHP
 				"phpstan", -- PHP
 			},
@@ -17,7 +16,6 @@ return {
 			ensure_installed = {
 				"lua_ls", -- Lua
 				"intelephense", -- PHP
-				"volar", -- VueJS
 				"tailwindcss", -- Tailwind CSS
 			},
 		},
@@ -37,25 +35,6 @@ return {
 			-- PHP
 			lsp.intelephense.setup({
 				capabilities = capabilities,
-			})
-
-			-- VueJS
-			lsp.volar.setup({
-				capabilities = capabilities,
-				filetypes = {
-					"javascript",
-					"javascriptreact",
-					"typescript",
-					"typescriptreact",
-					"vue",
-				},
-				init_options = {
-					typescript = {
-						tsdk = vim.fn.expand(
-							"~/.local/share/nvim/mason/packages/typescript-language-server/node_modules/typescript/lib"
-						),
-					},
-				},
 			})
 
 			-- Tailwind CSS
