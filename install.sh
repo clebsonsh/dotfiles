@@ -12,4 +12,4 @@ rm -rf $HOME/.config/lazygit
 ln -s $DOTFILES/nvim $HOME/.config/lazygit
 
 rm -rf $HOME/.config/omp
-ln -s $DOTFILES/nvim $HOME/.config/omp
+ln -s $DOTFILES/omp $HOME/.config/omp
