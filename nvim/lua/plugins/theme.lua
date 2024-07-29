@@ -1,7 +1,6 @@
 return {
 	{
 		"Mofiqul/vscode.nvim",
-		enabled = false,
 		name = "vscode",
 		opts = {
 			-- Underline `@markup.link.*` variants
@@ -15,6 +14,7 @@ return {
 		end,
 	},
 	{
+		enabled = false,
 		"catppuccin/nvim",
 		name = "catppuccin",
 		priority = 1000,

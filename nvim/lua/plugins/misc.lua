@@ -15,7 +15,7 @@ return {
 	"farmergreg/vim-lastplace",
 
 	-- Add smooth scrolling to avoid jarring jumps
-	{ "karb94/neoscroll.nvim", opts = {}},
+	{ "karb94/neoscroll.nvim", opts = {} },
 
 	-- Automatically add closing brackets, quotes, etc.
 	{
