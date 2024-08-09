@@ -7,6 +7,8 @@ return {
 				"stylua", -- Lua
 				"pint", -- PHP
 				"phpstan", -- PHP
+				"tsserver", -- Javascript
+				"volar", -- Vue
 			},
 		},
 	},
@@ -40,6 +42,47 @@ return {
 			-- Tailwind CSS
 			lsp.tailwindcss.setup({
 				capabilities = capabilities,
+			})
+
+			-- Javascript
+			lsp.tsserver.setup({
+				capabilities = capabilities,
+				init_options = {
+					plugins = {
+						{
+							name = "@vue/typescript-plugin",
+							location = "/home/clebson/.nvm/versions/node/v20.16.0/lib/node_modules/@vue/typescript-plugin",
+							languages = { "javascript", "typescript", "vue" },
+						},
+					},
+				},
+				filetypes = {
+					"javascript",
+					"typescript",
+					"vue",
+				},
+			})
+
+			-- Vue
+			lsp.volar.setup({
+				capabilities = capabilities,
+				filetypes = { "vue" },
+				settings = {
+					vue = {
+						complete = {
+							casing = {
+								props = "autoCamel",
+							},
+						},
+					},
+				},
+				init_options = {
+					typescript = {
+						tsdk = vim.fn.expand(
+							"~/.local/share/nvim/mason/packages/typescript-language-server/node_modules/typescript/lib"
+						),
+					},
+				},
 			})
 
 			-- keymaps
