@@ -3,6 +3,9 @@ return {
 		"Mofiqul/vscode.nvim",
 		name = "vscode",
 		opts = {
+			-- Enable transparent background
+			transparent = true,
+
 			-- Underline `@markup.link.*` variants
 			underline_links = true,
 
