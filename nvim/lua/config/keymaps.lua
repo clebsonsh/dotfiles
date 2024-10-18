@@ -1,9 +1,6 @@
--- Space is my leader.
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
--- When text is wrapped, move by terminal rows, not lines, unless a count is provided.
-vim.keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true })
-vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true })
+-- Keymaps are automatically loaded on the VeryLazy event
+-- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
+-- Add any additional keymaps here
 
 -- Reselect visual selection after indenting.
 vim.keymap.set("v", "<", "<gv")
@@ -18,9 +15,9 @@ vim.keymap.set("n", "q:", ":q")
 
 -- Save me!!
 vim.keymap.set("i", "jj", "<Esc>:w<CR>")
-vim.keymap.set("i", "<C-s>", "<Esc>:w<CR>")
-vim.keymap.set("n", "<Leader>j", ":w<CR>")
-vim.keymap.set("n", "<C-s>", ":w<CR>")
+
+-- close that buffer
+vim.keymap.set("n", "<Leader>q", ":q<CR>")
 
 -- Paste replace visual selection without copying it.
 vim.keymap.set("v", "p", '"_dP')
@@ -31,9 +28,6 @@ vim.keymap.set("n", ",,", "A,<Esc>")
 
 -- Quickly clear search highlighting.
 vim.keymap.set("n", "<Leader>k", ":nohlsearch<CR>")
-
--- Open the current file in the default program (on Mac this should just be just `open`).
-vim.keymap.set("n", "<Leader>x", ":!xdg-open %<CR><CR>")
 
 -- Move lines up and down.
 vim.keymap.set("i", "<A-j>", "<Esc>:move .+1<CR>==gi")
