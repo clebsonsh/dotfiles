@@ -15,4 +15,4 @@ rm -rf $HOME/.config/omp
 ln -s $DOTFILES/omp $HOME/.config/omp
 
 rm -rf $HOME/.config/kanata
-ln -s $DOTFILES/omp $HOME/.config/kanata
+ln -s $DOTFILES/kanata $HOME/.config/kanata
