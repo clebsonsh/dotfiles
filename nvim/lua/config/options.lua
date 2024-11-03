@@ -13,3 +13,5 @@ vim.filetype.add({
     ["helmfile.*%.ya?ml"] = "helm",
   },
 })
+
+vim.g.lazyvim_php_lsp = "intelephense"
