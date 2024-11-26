@@ -16,11 +16,11 @@
             "cache_duration": "none"
           },
           "trailing_diamond": "\ue0b0",
-          "template": " \ue266 MEM: {{ round .PhysicalPercentUsed .Precision }}% | {{ (div ((sub .PhysicalTotalMemory .PhysicalAvailableMemory)|float64) 1073741824.0) }}/{{ (div .PhysicalTotalMemory 1073741824.0) }}GB \ue266 ",
+          "template": " {{ .Path }} ",
+          "type": "path",
+          "style": "plain",
           "foreground": "#011627",
-          "background": "#89b4fb",
-          "type": "sysinfo",
-          "style": "diamond"
+          "background": "#89b4fb"
         },
         {
           "properties": {
