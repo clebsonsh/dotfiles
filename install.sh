@@ -11,8 +11,14 @@ ln -s $DOTFILES/nvim $HOME/.config/nvim
 rm -rf $HOME/.config/lazygit
 ln -s $DOTFILES/lazygit $HOME/.config/lazygit
 
-rm -rf $HOME/.config/omp
-ln -s $DOTFILES/omp $HOME/.config/omp
-
 rm -rf $HOME/.config/kanata
 ln -s $DOTFILES/kanata $HOME/.config/kanata
+
+rm -rf $HOME/.config/monitors.xml
+ln -s $DOTFILES/misc/monitors.xml $HOME/.config/monitors.xml
+
+rm -rf $HOME/.config/starship.toml
+ln -s $DOTFILES/misc/starship.toml $HOME/.config/starship.toml
+
+rm -rf $HOME/.gitconfig
+ln -s $DOTFILES/misc/.gitconfig $HOME/.gitconfig
