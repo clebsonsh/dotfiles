@@ -28,3 +28,6 @@ ln -s $DOTFILES/misc/ideavimrc $HOME/.ideavimrc
 
 rm -rf $HOME/.vimrc
 ln -s $DOTFILES/misc/vimrc $HOME/.vimrc
+
+rm -rf $HOME/.bashrc
+ln -s $DOTFILES/misc/bashrc $HOME/.bashrc
