@@ -21,4 +21,10 @@ rm -rf $HOME/.config/starship.toml
 ln -s $DOTFILES/misc/starship.toml $HOME/.config/starship.toml
 
 rm -rf $HOME/.gitconfig
-ln -s $DOTFILES/misc/.gitconfig $HOME/.gitconfig
+ln -s $DOTFILES/misc/gitconfig $HOME/.gitconfig
+
+rm -rf $HOME/.ideavimrc
+ln -s $DOTFILES/misc/ideavimrc $HOME/.ideavimrc
+
+rm -rf $HOME/.vimrc
+ln -s $DOTFILES/misc/vimrc $HOME/.vimrc
