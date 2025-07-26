@@ -122,7 +122,6 @@ export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 export PATH=$PATH:/usr/local/go/bin
 
 ## ALIAS
-alias vim='nvim'
 alias cp='rsync -ah --progress'
 alias upd='sudo apt update; sudo apt upgrade -y'
 alias top='htop'
@@ -137,8 +136,11 @@ nah() {
 }
 ## RUN STARSHIP
 eval "$(starship init bash)"
+
+## COMPOSER PATH
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
+## NVM SCRIPTS
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

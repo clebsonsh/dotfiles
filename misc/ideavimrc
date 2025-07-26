@@ -1,3 +1,6 @@
+" Use system clipboard
+set clipboard=unnamedplus
+
 " Set leader key
 let mapleader = " "
 
