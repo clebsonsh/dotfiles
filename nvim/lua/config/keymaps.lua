@@ -19,6 +19,9 @@ vim.keymap.set("i", "jj", "<Esc>:w<CR>")
 -- close that buffer
 vim.keymap.set("n", "<Leader>q", ":q<CR>")
 
+-- save that buffer
+vim.keymap.set("n", "<Leader>w", ":w<CR>")
+
 -- Paste replace visual selection without copying it.
 vim.keymap.set("v", "p", '"_dP')
 

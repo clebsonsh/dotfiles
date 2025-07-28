@@ -20,6 +20,9 @@ inoremap jj <Esc>:w<CR>
 " Close buffer
 nnoremap <Leader>q :q<CR>
 
+" Save buffer
+nnoremap <Leader>w :w<CR>
+
 " Paste replace visual selection without copying it.
 vnoremap p "_dP
 
