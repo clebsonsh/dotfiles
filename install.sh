@@ -11,9 +11,6 @@ ln -s "$DOTFILES"/nvim "$HOME"/.config/nvim
 rm -rf "$HOME"/.config/lazygit
 ln -s "$DOTFILES"/lazygit "$HOME"/.config/lazygit
 
-rm -rf "$HOME"/.config/kanata
-ln -s "$DOTFILES"/kanata "$HOME"/.config/kanata
-
 rm -rf "$HOME"/.config/starship.toml
 ln -s "$DOTFILES"/misc/starship.toml "$HOME"/.config/starship.toml
 
