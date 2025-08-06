@@ -47,6 +47,8 @@ return {
             sh = { "shfmt" },
             bash = { "shfmt" },
 
+            sql = { "sql_formatter" },
+
             -- Other (system tools)
             rust = { "rustfmt" }, -- comes with Rust installation
 

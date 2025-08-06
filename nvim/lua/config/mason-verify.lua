@@ -28,7 +28,7 @@ function M.verify_tools()
         "typescript-language-server", "intelephense", "zls",
 
         -- Formatters (Mason-managed)
-        "stylua", "prettier", "goimports", "black", "isort", "shfmt", "pint",
+        "stylua", "prettier", "goimports", "black", "isort", "shfmt", "pint", "sql_formatter",
 
         -- Linters (Mason-managed)
         "golangci-lint", "eslint_d", "shellcheck"
