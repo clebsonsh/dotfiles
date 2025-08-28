@@ -122,6 +122,7 @@ alias cp='rsync -ah --progress'
 alias upd='sudo apt update; sudo apt upgrade -y'
 alias top='htop'
 alias vim='nvim'
+alias c='composer'
 
 ## GIT GIVE UP
 nah() {
