@@ -60,3 +60,7 @@ nmap <leader>e :action ActivateProjectToolWindow<cr>
 
 " Hide all windows
 nmap <leader>d :action HideAllWindows<cr>
+
+" Disable bell
+set visualbell
+set noerrorbells
