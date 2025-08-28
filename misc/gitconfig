@@ -2,3 +2,5 @@
 	name = Clebson Moura
 	email = clebson.sh@gmail.com
 	username = clebsonsh
+[init]
+	defaultBranch = main
