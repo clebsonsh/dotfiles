@@ -8,6 +8,9 @@ ln -s "$DOTFILES"/kitty "$HOME"/.config/kitty
 rm -rf "$HOME"/.config/nvim
 ln -s "$DOTFILES"/nvim "$HOME"/.config/nvim
 
+rm -rf "$HOME"/.config/zed
+ln -s "$DOTFILES"/zed "$HOME"/.config/zed
+
 rm -rf "$HOME"/.config/lazygit
 ln -s "$DOTFILES"/lazygit "$HOME"/.config/lazygit
 

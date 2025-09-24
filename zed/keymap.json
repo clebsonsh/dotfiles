@@ -1,0 +1,47 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j j": "vim::NormalBefore",
+      "ctrl-s": "workspace::Save",
+      "ctrl-v": ["workspace::SendKeystrokes", "escape p"]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "space 1": ["pane::ActivateItem", 0],
+      "space 2": ["pane::ActivateItem", 1],
+      "space 3": ["pane::ActivateItem", 2],
+      "space 4": ["pane::ActivateItem", 3],
+      "space 5": ["pane::ActivateItem", 4],
+      "shift-k": "editor::Hover",
+      "ctrl-j": "terminal_panel::ToggleFocus",
+      "ctrl-shift-e": "project_panel::ToggleFocus",
+      ", ,": ["workspace::SendKeystrokes", "A , escape"],
+      "; ;": ["workspace::SendKeystrokes", "A ; escape"],
+      "space space": "file_finder::Toggle",
+      "space /": "pane::DeploySearch",
+      "space e": "project_panel::ToggleFocus",
+      "space q": "pane::CloseActiveItem",
+      "space d": "workspace::CloseAllDocks",
+      "space f": "editor::Format",
+      "ctrl-s": "workspace::Save",
+      "space w": "workspace::Save",
+      "ctrl-v": ["workspace::SendKeystrokes", "escape p"]
+    }
+  }
+]
