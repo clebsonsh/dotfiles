@@ -1,0 +1,161 @@
+{
+    "vim.useCtrlKeys": false,
+    "vim.useSystemClipboard": true,
+    "vim.leader": "<space>",
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                ",",
+                ","
+            ],
+            "after": [
+                "A",
+                ",",
+                "<esc>"
+            ]
+        },
+        {
+            "before": [
+                ";",
+                ";"
+            ],
+            "after": [
+                "A",
+                ";",
+                "<esc>"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "q"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.closeActiveEditor",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.view.explorer",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "a"
+            ],
+            "commands": [
+                "vscode-harpoon.addEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "p",
+                "e"
+            ],
+            "commands": [
+                "vscode-harpoon.editEditors"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "commands": [
+                "vscode-harpoon.editorQuickPick"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "1"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor1"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "2"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor2"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "3"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor3"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "4"
+            ],
+            "commands": [
+                "vscode-harpoon.gotoEditor4"
+            ]
+        }
+    ],
+    "breadcrumbs.enabled": false,
+    "editor.cursorBlinking": "solid",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.smoothScrolling": true,
+    "editor.minimap.enabled": false,
+    "editor.fontLigatures": true,
+    "editor.fontSize": 18,
+    "editor.lineHeight": 1.6,
+    "editor.fontFamily": "JetBrainsMono Nerd Font, SF Mono, Menlo, Monaco, monospace",
+    "editor.formatOnSave": true,
+    "editor.linkedEditing": true,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.horizontal": "hidden",
+    "explorer.confirmDelete": false,
+    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.lineHeight": 1.6,
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font, SF Mono, Menlo, Monaco, monospace",
+    "workbench.startupEditor": "none",
+    "workbench.statusBar.visible": false,
+    "workbench.activityBar.location": "top",
+    "workbench.sideBar.location": "right",
+    "files.insertFinalNewline": true,
+    "files.autoSave": "onFocusChange",
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "workbench.iconTheme": "catppuccin-macchiato",
+    "workbench.editor.showTabs": "none",
+    "git.confirmSync": false,
+    "git.blame.editorDecoration.enabled": true,
+    "git.blame.editorDecoration.template": "${authorName} (${authorDateAgo}) - ${subject}",
+    "window.menuBarVisibility": "compact",
+    "window.commandCenter": false,
+    "workbench.editor.editorActionsLocation": "hidden",
+    "workbench.layoutControl.enabled": false
+}
